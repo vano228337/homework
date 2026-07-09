@@ -1,0 +1,38 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    width: 240px;
+}
+
+fieldset {
+    border-radius: 15px;
+    background-color: #dbd8d8;
+    padding: 20px;
+
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    border-width: 2px;
+
+}
+
+
+textarea {
+    resize: vertical;
+    width: 170px;
+    max-height: 100px;
+    min-height: 30px;
+}
+
+h3 {
+    margin: 10px 0px;
+}
+
+button,
+#check {
+    cursor: pointer;
+}
