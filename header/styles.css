@@ -3,7 +3,7 @@ html {
     background-color: rgb(17, 14, 19);
 }
 
-body* {
+body * {
     box-sizing: border-box;
 }
 
