@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+
+
+
+.form {
+    max-width: 400px;
+    width: 100%;
+
+    background-color: #ff7070;
+    padding: 40px;
+
+}
+
+
+
+.form-group {
+    border: none;
+    padding: 0;
+}
+
+.fgt {
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+label {
+
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input {
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+}
+
+.input,
+textarea,
+form,
+button {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    outline: none;
+
+}
+
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    max-height: 100px;
+    min-height: 30px;
+}
+
+
+.input:disabled,
+textarea:disabled {
+    opacity: 0.7;
+}
+
+.check-label {
+    padding-left: 22px;
+    margin-top: 7px;
+}
+
+.check {
+    position: absolute;
+    appearance: none;
+    outline: none;
+}
+
+.check::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: -22px;
+}
+
+.check:checked::after {
+    background: url(../images/check-icon.svg) no-repeat center, #206ec9;
+}
+
+legend {
+    padding-top: 20px;
+}
+
+.button {
+    color: #fff;
+    background-color: #206ec9;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 5px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+    background-color: #4a1a97;
+}
+
+.button:disabled,
+.check:disabled::after {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.input:focus-visible,
+.check:focus-visible::after,
+textarea:focus-visible {
+    outline: 2px solid #4a1a97;
+}
