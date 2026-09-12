@@ -92,4 +92,17 @@
     outline: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:focus-visible {
+    border-radius: 50%;
+}
+
+.article-play-button:hover {
+    background-color: #5199d8;
+}
+
+.article-play-button:active {
+    background-color: #117cda;
 }

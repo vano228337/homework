@@ -59,9 +59,7 @@
     transition: opacity 0.2s;
 }
 
-.button:hover {
-    opacity: 0.75;
-}
+
 
 .hero-images {
     position: relative;
@@ -85,7 +83,7 @@
     margin-bottom: 140px;
 }
 
-.news h2 {
+h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 48px;
@@ -153,4 +151,60 @@
 
 .news-link:hover::after {
     transform: translateX(5px);
+}
+
+.faq {
+    position: relative;
+}
+
+.faq::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url(../images/декор.svg);
+    width: calc(50% - 250px);
+    height: 47px;
+    top: 215px;
+}
+
+.faq-container {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 140px;
+}
+
+details {
+    margin-bottom: 20px;
+    border-block: 1px solid #d3cbd9;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+summary::after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    background: url(../images/стрелка\ \(1\).svg) no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details>p {
+    padding: 0 20px 20xp;
 }

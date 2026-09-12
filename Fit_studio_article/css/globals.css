@@ -41,6 +41,23 @@ a {
     text-decoration: none;
 }
 
+a,
+button {
+    outline: none;
+}
+
+.button {
+    transition: 0.2s;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.button:active {
+    background-color: #2a7ac0;
+}
+
 .text {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -48,6 +65,15 @@ a {
     line-height: 130%;
     color: #535755;
 
+}
+
+.title-medium {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
 }
 
 .text-sub {
@@ -58,4 +84,11 @@ a {
     text-align: right;
     text-transform: uppercase;
     color: #858e8a;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #050505;
+    outline-offset: 1px;
+    border-radius: 1px;
 }
