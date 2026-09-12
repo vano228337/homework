@@ -9,13 +9,7 @@
 }
 
 .phone {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.04em;
     text-align: right;
-    text-transform: uppercase;
-    color: #858e8a;
 }
 
 .phone p {
